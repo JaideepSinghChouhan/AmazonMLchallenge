@@ -1,0 +1,30 @@
+]# =========================================================================
+# 1. Python Cache & Bytecode (Hides all those __pycache__ folders and .pyc files)
+# =========================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================================================================
+# 2. Machine Learning Data (Ignores large dataset TSV files)
+# =========================================================================
+# This keeps the dataset/ directory structure in Git but ignores the data files
+dataset/**/*.tsv
+
+# =========================================================================
+# 3. Model Artifacts & Outputs
+# =========================================================================
+# Ignores trained models like your 'ber_model.joblib' but keeps the folder
+models/*.joblib
+models/*.pkl
+
+# If you generate heavy submission files in the output folder:
+output/*.csv
+output/*.tsv
+
+# =========================================================================
+# 4. IDE Specifics
+# =========================================================================
+.vscode/
+.idea/
